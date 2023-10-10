@@ -11,6 +11,7 @@ const PostContent = ({ postObj }) => {
             <span>{postObj.yak}</span>
           </div>
         </div>
+        <button></button>
       </div>
     )
   );

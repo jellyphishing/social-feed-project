@@ -4,6 +4,7 @@ import { useState } from "react";
 //import { ReactComponent as HeartIcon } from "../../assets/heart-svgrepo-com.svg";
 const CustomButton = () => {
   const [likeButtonClass, setLikeButtonClass] = useState("inactive");
+  const [dislikeButtonClass, setDislikeButtonClass] = useState("inactive");
   // const [heartIconColor, setHeartIconColor] = useState("lightgrey");
 
   const handleLikeButtonClick = () => {
@@ -11,6 +12,14 @@ const CustomButton = () => {
       setLikeButtonClass("active");
     } else {
       setLikeButtonClass("inactive");
+    }
+  };
+
+  const handleDislikeButtonClick = () => {
+    if (dislikeButtonClass === "inactive") {
+      setDislikeButtonClass("active");
+    } else {
+      setDislikeButtonClass("inactive");
     }
   };
 
@@ -27,6 +36,10 @@ const CustomButton = () => {
       <button className={likeButtonClass} onClick={handleLikeButtonClick}>
         Click to Like!
       </button>
+      <button
+        className={dislikeButtonClass}
+        onClick={handleDislikeButtonClick}
+      ></button>
       {/* <HeartIcon
         height={300}
         width={300}

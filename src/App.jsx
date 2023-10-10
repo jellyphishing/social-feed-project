@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import PostList from "./components/PostList/PostList";
 import PostContent from "./components/PostContent/PostContent";
+import CustomButton from "./components/CustomButton/CustomButton";
 
 function App() {
   const addedPost = [
@@ -27,6 +28,8 @@ function App() {
     <div className="App">
       <Header />
       <PostList postObj={addedPost} />
+      <PostContent />
+      <CustomButton />
     </div>
   );
 }
