@@ -1,6 +1,6 @@
-const PostList = ({}) => {
-  const posts = ["Charlie", "Copper", "Guinness", "Cheeto"];
-  const postItems = posts.map((post) => <div>{post}</div>);
+import PostContent from "../PostContent/PostContent";
+const PostList = ({ postObj }) => {
+  const postItems = postObj.map((post) => <PostContent postObj={post} />);
   return (
     <div>
       <h4>Yaks</h4>

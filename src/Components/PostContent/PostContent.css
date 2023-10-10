@@ -1,0 +1,8 @@
+.data-item {
+    display: flex;
+    align-content: flex-start;
+    background-color: lightblue;
+}
+.flex-item {
+    background-color:lightblue;
+}

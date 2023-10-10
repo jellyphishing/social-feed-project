@@ -1,14 +1,18 @@
-const PostContent = ({ petName, yak }) => {
+import "./PostContent.css";
+
+const PostContent = ({ postObj }) => {
   return (
-    <div>
-      <h4>{petName}</h4>
-      <div>
+    postObj && (
+      <div className="flex-item">
+        <h4>{postObj.petName}</h4>
         <div>
-          <span>Yak:</span>
-          <span>{yak}</span>
+          <div className="data-item">
+            <span>Yak: </span>
+            <span>{postObj.yak}</span>
+          </div>
         </div>
       </div>
-    </div>
+    )
   );
 };
 
