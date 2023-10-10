@@ -1,5 +1,5 @@
 const PostList = ({}) => {
-  const posts = ["Charlie", "Copper", "Guinness"];
+  const posts = ["Charlie", "Copper", "Guinness", "Cheeto"];
   const postItems = posts.map((post) => <div>{post}</div>);
   return (
     <div>
